@@ -1,7 +1,11 @@
+import BackgroundImage from "@/components/shared/BackgroundImage";
 import Banner from "@/components/shared/Banner";
 import CultureHeritage from "@/components/shared/CultureHeritage";
+import EcoWildlife from "@/components/shared/EcoWildlife";
 import FeaturedDestinations from "@/components/shared/FeaturedDestinations";
+import FestivalEvents from "@/components/shared/FestivalEvents";
 import HighlightsSection from "@/components/shared/HighlightsSection";
+import WhyVisit from "@/components/shared/WhtVisit";
 
 export default function Home() {
 	return (
@@ -9,7 +13,11 @@ export default function Home() {
 			<Banner />
 			<HighlightsSection />
 			<FeaturedDestinations />
+			<BackgroundImage />
 			<CultureHeritage />
+			<FestivalEvents />
+			<EcoWildlife />
+			<WhyVisit />
 		</section>
 	);
 }

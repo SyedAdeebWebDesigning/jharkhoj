@@ -1,13 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
 import Heading from "./Heading";
+import { cn } from "@/lib/utils";
+import { buttonVariants } from "../ui/button";
 
 export default function CultureHeritage() {
 	return (
-		<section className="py-20 bg-[white] border-t border-gray-200">
+		<section className="py-20 bg-[white] border border-gray-200 border-b">
 			<div className="mx-auto px-[18px] grid grid-cols-1 lg:grid-cols-2 gap-2 items-start">
 				{/* Image Side */}
-				<div className="relative h-[800px] w-full overflow-hidden shadow-lg">
+				<div className="relative h-[800px] w-full overflow-hidden">
 					<Image
 						src="/assets/culture-heritage.webp"
 						alt="Tribal Culture of Jharkhand"
@@ -19,7 +21,7 @@ export default function CultureHeritage() {
 
 				{/* Content Side */}
 				<div className="">
-					<div className="p-10">
+					<div className="p-10 mx-auto flex flex-col justify-center">
 						<Heading
 							title="Explore the Rich Culture"
 							subtitle="Jharkhand is home to diverse tribal communities, vibrant festivals,
@@ -29,12 +31,15 @@ export default function CultureHeritage() {
 						/>
 						<Link
 							href="/culture"
-							className="lg:mt-6 bg-primary mt-[38px] text-white px-6 py-3 rounded-lg font-medium transition flex items-center justify-center w-fit mx-auto">
+							className={cn(
+								"lg:mt-6 bg-primary mt-[38px] text-white px-6 py-3 rounded-lg font-medium transition flex items-center justify-center w-fit mx-auto",
+								buttonVariants({ variant: "default", size: "lg" })
+							)}>
 							Discover More →
 						</Link>
 					</div>
 					<div className="">
-						<div className="relative h-[508px] overflow-hidden shadow-lg w-full">
+						<div className="relative h-[508px] overflow-hidden w-full">
 							<Image
 								src="/assets/culture-heritage-2.webp"
 								alt="Tribal Culture of Jharkhand"

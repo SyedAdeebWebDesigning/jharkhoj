@@ -49,7 +49,7 @@ const Navbar = () => {
 							{navLinks.map((link) => (
 								<li key={link.name}>
 									<Link href={link.href}>
-										<p className="text-black hover:text-blue-500 flex space-x-2 items-center font-semibold">
+										<p className="text-black hover:text-primary hover:underline underline-offset-6 flex space-x-2 items-center font-semibold">
 											<link.icon size={18} className="mr-1" />
 											{link.name}
 										</p>

@@ -43,7 +43,7 @@ export default function Banner() {
 						"px-4 py-2 text-white mx-auto text-center bg-transparent rounded-full w-fit relative mt-4",
 						buttonVariants({ size: "lg", variant: "outline" })
 					)}>
-					Explore Now
+					Explore Now →
 				</Link>
 			</motion.div>
 		</ImagesSlider>

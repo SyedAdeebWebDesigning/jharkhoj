@@ -1,3 +1,5 @@
+import { CheckCircle, Landmark, ShieldCheck, Trees } from "lucide-react";
+
 export const highlightsCards = [
 	{
 		title: "Natural Beauty",
@@ -69,5 +71,58 @@ export const destinations = [
 		image: "/destinations/rockgarden.webp",
 		description:
 			"Rock Garden is located in Ranchi town. Best place to spend holiday. It is situated about 4 km away from Albert Ekka chowk. There is a big lake beside the hill that is known as Kanke dam. The Rock Garden is situated on the hilltop. It is a beautiful garden having different types of sculptures made up of stones and waste materials. The garden is divided into two parts. One part is on the hilltop and another part is down the hill near the lake. The garden has a lot of greenery and many fountains that add to its beauty. The garden is an ideal picnic spot for families and friends.",
+	},
+];
+
+export const festivals = [
+	{
+		title: "Sarhul Festival",
+		date: "April",
+		description: "A spring festival celebrating nature with dance and rituals.",
+		image: "/festivals/sarhul.webp",
+		link: "/festivals/sarhul",
+	},
+	{
+		title: "Karma Festival",
+		date: "September",
+		description:
+			"Tribal celebration with songs, dance, and the sacred Karma tree.",
+		image: "/festivals/karma.webp",
+		link: "/festivals/karma",
+	},
+	{
+		title: "Tusu Festival",
+		date: "January",
+		description:
+			"A harvest festival marked by folk songs and colorful processions.",
+		image: "/festivals/tusu.webp",
+		link: "/festivals/tusu",
+	},
+];
+
+export const usps = [
+	{
+		title: "Safe & Scenic",
+		description:
+			"Travel across peaceful landscapes, waterfalls, and serene valleys.",
+		icon: ShieldCheck,
+	},
+	{
+		title: "Rich Tribal Culture",
+		description:
+			"Experience vibrant festivals, traditional dances, and local crafts.",
+		icon: Landmark,
+	},
+	{
+		title: "Eco-Friendly Tourism",
+		description:
+			"Explore national parks, wildlife sanctuaries, and lush green forests.",
+		icon: Trees,
+	},
+	{
+		title: "Govt. Certified Packages",
+		description:
+			"Enjoy reliable and authentic tourism experiences with official support.",
+		icon: CheckCircle,
 	},
 ];

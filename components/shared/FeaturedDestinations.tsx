@@ -28,7 +28,7 @@ const FeaturedDestinations = (props: Props) => {
 	};
 
 	return (
-		<div className="py-16">
+		<div className="py-16 bg-white">
 			<MaxWidthWrapper>
 				<Heading
 					title="Featured Destinations"
@@ -48,7 +48,7 @@ const FeaturedDestinations = (props: Props) => {
 						) => (
 							<div
 								key={destination.title}
-								className="relative h-[400px] w-full [perspective:10000px] cursor-pointer"
+								className="relative h-[400px] w-full [perspective:10000px] cursor-pointer group "
 								onClick={() => handleFlip(index)}>
 								{/* Card Wrapper */}
 								<div
@@ -56,13 +56,13 @@ const FeaturedDestinations = (props: Props) => {
 										flippedIndex === index ? "[transform:rotateY(180deg)]" : ""
 									}`}>
 									{/* Front Side */}
-									<div className="absolute inset-0 [backface-visibility:hidden]">
+									<div className="absolute inset-0 [backface-visibility:hidden] z-10 overflow-hidden group-hover:shadow-xl transition-shadow">
 										<Image
 											src={destination.image}
 											alt={destination.title}
 											loading="lazy"
 											fill
-											className="object-cover"
+											className="object-cover group-hover:scale-[1.01] transition-all duration-200 overflow-hidden -z-10"
 										/>
 										<Card className="absolute bottom-0 w-full bg-gradient-to-t from-black/50 to-transparent border-0 rounded-none">
 											<CardContent>
@@ -114,7 +114,7 @@ const FeaturedDestinations = (props: Props) => {
 							"mx-auto flex items-center justify-center",
 							buttonVariants({ variant: "default", size: "lg" })
 						)}>
-						View All Destinations
+						View All Destinations →
 					</Link>
 				</div>
 			</MaxWidthWrapper>
