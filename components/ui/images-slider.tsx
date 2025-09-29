@@ -140,6 +140,7 @@ export const ImagesSlider = ({
 						src={loadedImages[currentIndex]}
 						initial="initial"
 						animate="visible"
+						alt="Slider Image"
 						exit={direction === "up" ? "upExit" : "downExit"}
 						variants={slideVariants as any}
 						className="image h-full w-full absolute inset-0 object-cover object-center"
