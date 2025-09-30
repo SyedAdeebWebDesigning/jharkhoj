@@ -13,7 +13,6 @@ export default function Home() {
 			<Banner />
 			<HighlightsSection />
 			<FeaturedDestinations />
-			<BackgroundImage />
 			<CultureHeritage />
 			<FestivalEvents />
 			<EcoWildlife />
