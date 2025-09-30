@@ -126,8 +126,9 @@ export default function Footer() {
 
 			{/* Bottom Bar */}
 			<div className="border-t border-neutral-400 mt-8 pt-4 text-center text-sm text-neutral-800">
-				© {new Date().getFullYear()} Smart India Hackathon Project - Department
-				of Tourism, Govt. of Jharkhand
+				© {new Date().getFullYear()}{" "}
+				<span className="font-semibold">DevLynk</span> Smart India Hackathon
+				Project - Department of Tourism, Govt. of Jharkhand
 			</div>
 		</section>
 	);
