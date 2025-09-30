@@ -8,10 +8,10 @@ import { cn } from "@/lib/utils";
 
 export default function Banner() {
 	const images = [
-		"/banner/Banner-1.webp",
-		"/banner/Banner-2.webp",
-		"/banner/Banner-3.webp",
-		"/banner/Banner-4.webp",
+		"/banner/Banner-1.jpg",
+		"/banner/Banner-2.jpg",
+		"/banner/Banner-3.jpg",
+		"/banner/Banner-4.jpg",
 	];
 	return (
 		<ImagesSlider className="md:h-[100vh] h-[80vh] pt-20" images={images}>
