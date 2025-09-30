@@ -1,4 +1,3 @@
-import BackgroundImage from "@/components/shared/BackgroundImage";
 import Banner from "@/components/shared/Banner";
 import CultureHeritage from "@/components/shared/CultureHeritage";
 import EcoWildlife from "@/components/shared/EcoWildlife";

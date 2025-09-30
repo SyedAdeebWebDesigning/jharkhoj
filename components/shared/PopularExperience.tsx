@@ -96,7 +96,7 @@ const PopularExperience = () => {
 							</p>
 						</div>
 						<div
-							className="absolute size-10 p-2 rounded-full top-4 left-[10px] -z-10 transition-all duration-700 group-hover:scale-[2000%] group-hover:left-0 group-hover:top-0 overflow-hidden"
+							className="absolute size-9 p-2 rounded-full top-[18px] left-[12px] -z-10 transition-all duration-700 group-hover:scale-[2200%] group-hover:left-0 group-hover:top-0 overflow-hidden"
 							style={{
 								background: `linear-gradient(135deg, ${category.bgGradient[0]}, ${category.bgGradient[1]})`,
 							}}
