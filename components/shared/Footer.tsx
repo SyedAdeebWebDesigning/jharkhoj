@@ -26,7 +26,7 @@ export default function Footer() {
 
 				{/* Middle - Quick Links */}
 				<div className="flex flex-col items-center">
-					<h4 className="text-lg font-semibold text-left mr- mb-4">
+					<h4 className="text-lg font-semibold text-left mr-8 mb-4">
 						Quick Links
 					</h4>
 					<ul className="space-y-2 text-sm text-neutral-800">

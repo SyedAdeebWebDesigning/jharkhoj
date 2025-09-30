@@ -50,6 +50,7 @@ const PopularCities = () => {
 								src={city.imageUrl}
 								alt={city.name}
 								fill
+								loading="lazy"
 								className="object-cover object-center transition-transform duration-500 scale-110"
 							/>
 
