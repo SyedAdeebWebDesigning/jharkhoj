@@ -11,7 +11,7 @@ import { FaLandmark } from "react-icons/fa";
 import { IoCalendarOutline, IoCalendar } from "react-icons/io5";
 import { BiSolidPlaneAlt } from "react-icons/bi";
 
-import { Landmark, MenuIcon } from "lucide-react";
+import { Landmark, MenuIcon, Plane } from "lucide-react";
 import { Button } from "../ui/button";
 
 import {
@@ -52,7 +52,7 @@ const Navbar = () => {
 		{
 			name: "Plan Your Trip",
 			href: "/plan",
-			icon: BiSolidPlaneAlt,
+			icon: Plane,
 			active: BiSolidPlaneAlt,
 		},
 	];
