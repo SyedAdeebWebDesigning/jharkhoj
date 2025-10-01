@@ -44,14 +44,14 @@ const PopularCities = () => {
 			<div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 w-full mx-auto">
 				{citiesImages.map((city) => (
 					<Link href={city.linkUrl} key={city.name}>
-						<Card className="group relative w-full h-[300px] rounded-lg overflow-hidden hover:shadow-xl transition">
+						<Card className="group relative w-full h-[300px] overflow-hidden hover:shadow-xl transition">
 							{/* Full background image */}
 							<Image
 								src={city.imageUrl}
 								alt={city.name}
 								fill
 								loading="lazy"
-								className="object-cover object-center transition-transform duration-500 scale-110"
+								className="object-cover object-center transition-transform duration-300 hover:scale-110"
 							/>
 
 							{/* Gradient overlay + title */}
