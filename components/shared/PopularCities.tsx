@@ -2,7 +2,6 @@ import React from "react";
 import { Card } from "../ui/card";
 import Image from "next/image";
 import Link from "next/link";
-import { li } from "motion/react-client";
 
 const PopularCities = () => {
 	const citiesImages = [
