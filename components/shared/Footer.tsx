@@ -104,6 +104,7 @@ export default function Footer() {
 					<div className="flex gap-4 mt-4">
 						<Link
 							href="https://facebook.com"
+							aria-label="facebook"
 							target="_blank"
 							className="text-black hover:underline hover:text-primary">
 							<Facebook className="w-5 h-5 hover:text-black" />
@@ -111,12 +112,14 @@ export default function Footer() {
 						<Link
 							href="https://instagram.com"
 							target="_blank"
+							aria-label="instagram"
 							className="text-black hover:underline hover:text-primary">
 							<Instagram className="w-5 h-5 hover:text-black" />
 						</Link>
 						<Link
 							href="https://youtube.com"
 							target="_blank"
+							aria-label="youtube"
 							className="text-black hover:underline hover:text-primary">
 							<Youtube className="w-5 h-5 hover:text-black" />
 						</Link>

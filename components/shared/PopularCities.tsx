@@ -7,21 +7,29 @@ const PopularCities = () => {
 	const citiesImages = [
 		{
 			name: "Ranchi",
+			imageAltDesc:
+				"A scenic view of Ranchi city with lush greenery and hills in the background.",
 			imageUrl: "/cities/ranchi.webp",
 			linkUrl: "/destinations/cities?city=ranchi",
 		},
 		{
 			name: "Jamshedpur",
+			imageAltDesc:
+				"A panoramic view of Jamshedpur city showcasing its industrial landscape and greenery.",
 			imageUrl: "/cities/jamshedpur.webp",
 			linkUrl: "/destinations/cities?city=jamshedpur",
 		},
 		{
 			name: "Deoghar",
+			imageAltDesc:
+				"A beautiful view of Deoghar city with its temples and natural surroundings.",
 			imageUrl: "/cities/deoghar.webp",
 			linkUrl: "/destinations/cities?city=deoghar",
 		},
 		{
 			name: "Dhanbad",
+			imageAltDesc:
+				"A captivating view of Dhanbad city highlighting its coal mining heritage and urban landscape.",
 			imageUrl: "/cities/dhanbad.webp",
 			linkUrl: "/destinations/cities?city=dhanbad",
 		},
@@ -47,7 +55,7 @@ const PopularCities = () => {
 							{/* Full background image */}
 							<Image
 								src={city.imageUrl}
-								alt={city.name}
+								alt={city.imageAltDesc}
 								fill
 								loading="lazy"
 								className="object-cover object-center transition-transform duration-300 hover:scale-110"

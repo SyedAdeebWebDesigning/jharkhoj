@@ -109,7 +109,7 @@ const FeaturedDestinations = (props: Props) => {
 				</div>
 				<div className="flex items-center justify-center mt-10">
 					<Link
-						href={"/destination"}
+						href={"/destinations"}
 						className={cn(
 							"mx-auto flex items-center justify-center",
 							buttonVariants({ variant: "default", size: "lg" })

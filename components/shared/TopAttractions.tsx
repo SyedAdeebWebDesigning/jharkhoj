@@ -1,86 +1,12 @@
 import { cn } from "@/lib/utils";
-import { image } from "motion/react-client";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { FaTripadvisor } from "react-icons/fa";
 import { buttonVariants } from "../ui/button";
+import { attractionsLinks } from "@/lib/links";
 
 const TopAttractions = () => {
-	const attractionsLinks = [
-		{
-			name: "Baba Baidyanath Temple",
-			category: "Religious Site",
-			link: "https://www.tripadvisor.in/Attraction_Review-g1893710-d2697959-Reviews-Baba_Baidyanath_Temple-Deoghar_Deoghar_District_Jharkhand.html",
-			imageUrl: "/attractions/baidyanath.webp",
-		},
-		{
-			name: "Jubilee Park",
-			category: "Parks",
-			link: "https://www.tripadvisor.in/Attraction_Review-g662321-d2288675-Reviews-Jubilee_Park-Jamshedpur_East_Singhbhum_District_Jharkhand.html",
-			imageUrl: "/attractions/jubilee-park.webp",
-		},
-		{
-			name: "Dassam Falls",
-			category: "Waterfalls",
-			link: "https://www.tripadvisor.in/Attraction_Review-g662320-d3171255-Reviews-Dassam_Falls-Ranchi_Ranchi_District_Jharkhand.html",
-			imageUrl: "/attractions/dassam-falls.webp",
-		},
-		{
-			name: "Parasnath Hills",
-			category: "Mountains",
-			link: "https://www.tripadvisor.in/Attraction_Review-g2295042-d3705336-Reviews-Parasnath_Hills-Giridih_Giridih_District_Jharkhand.html",
-			imageUrl: "/attractions/parasnath-hills.webp",
-		},
-		{
-			name: "Patratu Valley",
-			category: "Valleys",
-			link: "https://www.tripadvisor.in/Attraction_Review-g662320-d10509592-Reviews-Patratu_Valley-Ranchi_Ranchi_District_Jharkhand.html",
-			imageUrl: "/attractions/patratu-valley.webp",
-		},
-		{
-			name: "Maithan Dam",
-			category: "Dams",
-			link: "https://www.tripadvisor.in/Attraction_Review-g1011999-d4138788-Reviews-Maithan_Dam-Dhanbad_Dhanbad_District_Jharkhand.html",
-			imageUrl: "/attractions/maithan-dam.webp",
-		},
-		{
-			name: "Jonha Falls",
-			category: "Waterfalls",
-			link: "https://www.tripadvisor.in/Attraction_Review-g662320-d3218641-Reviews-Jonha_Falls-Ranchi_Ranchi_District_Jharkhand.html",
-			imageUrl: "/attractions/jonha-falls.webp",
-		},
-		{
-			name: "Rock Garden",
-			category: "Parks",
-			link: "https://www.tripadvisor.in/Attraction_Review-g662320-d3913045-Reviews-Rock_Garden-Ranchi_Ranchi_District_Jharkhand.html",
-			imageUrl: "/attractions/rock-garden.webp",
-		},
-		{
-			name: "Dalma Wildlife Sanctuary",
-			category: "Nature & Wildlife Areas",
-			link: "https://www.tripadvisor.in/Attraction_Review-g662321-d2708867-Reviews-Dalma_Wildlife_Sanctuary-Jamshedpur_East_Singhbhum_District_Jharkhand.html",
-			imageUrl: "/attractions/dalma-wildlife-sanctuary.webp",
-		},
-		{
-			name: "Hundru Falls",
-			category: "Waterfalls",
-			link: "https://www.tripadvisor.in/Attraction_Review-g662320-d3207695-Reviews-Hundru_Falls-Ranchi_Ranchi_District_Jharkhand.html",
-			imageUrl: "/attractions/hundru-falls.webp",
-		},
-		{
-			name: "Jagannath Mandir",
-			category: "Religious Sites",
-			link: "https://www.tripadvisor.in/Attraction_Review-g662320-d3217340-Reviews-Jagannath_Mandir-Ranchi_Ranchi_District_Jharkhand.html",
-			imageUrl: "/attractions/jagannath-mandir.webp",
-		},
-		{
-			name: "Trikuta Parvata",
-			category: "Religious Sites",
-			link: "https://www.tripadvisor.in/Attraction_Review-g1893710-d4138785-Reviews-Trikuta_Parvata-Deoghar_Deoghar_District_Jharkhand.html",
-			imageUrl: "/attractions/baidyanath.webp",
-		},
-	];
 	return (
 		<div className="pt-10 border-b mx-6">
 			<div className="flex items-center justify-between md:flex-row flex-col gap-4">

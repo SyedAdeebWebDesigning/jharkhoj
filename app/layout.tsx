@@ -4,6 +4,8 @@ import "./globals.css";
 import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
 
+import { ClerkProvider } from "@clerk/nextjs";
+
 const geistSans = Geist({
 	variable: "--font-geist-sans",
 	subsets: ["latin"],
@@ -26,17 +28,27 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en">
-			<body
-				className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-				<header>
-					<Navbar />
-				</header>
-				<main>{children}</main>
-				<footer>
-					<Footer />
-				</footer>
-			</body>
-		</html>
+		<ClerkProvider
+			appearance={{
+				elements: {
+					formButtonPrimary:
+						"bg-white!  text-black! py-2! border-2! border-black!",
+					cardBox: "shadow-none! border-2! border-neutral-300!",
+					formFieldInput: "py-4! border! border-neutral-300!",
+					socialButtonsBlockButton:
+						"py-2! shadow-none! border! border-neutral-300!",
+					formFieldInput__phoneNumber: "border-none!",
+
+					phoneInputBox:
+						" shadow-none! border! border-neutral-300! border-r-none!",
+				},
+			}}>
+			<html lang="en">
+				<body
+					className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+					{children}
+				</body>
+			</html>
+		</ClerkProvider>
 	);
 }
