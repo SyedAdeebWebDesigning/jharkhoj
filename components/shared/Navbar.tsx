@@ -11,7 +11,7 @@ import { FaLandmark } from "react-icons/fa";
 import { IoCalendarOutline, IoCalendar } from "react-icons/io5";
 import { BiSolidPlaneAlt } from "react-icons/bi";
 
-import { Landmark, MenuIcon, Plane } from "lucide-react";
+import { Landmark, MenuIcon, Plane, User } from "lucide-react";
 import { Button } from "../ui/button";
 
 import {
@@ -25,9 +25,13 @@ import {
 } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
 import { usePathname } from "next/navigation";
+import { SignedIn, SignedOut, UserButton, useUser } from "@clerk/nextjs";
+import { Separator } from "../ui/separator";
 
 const Navbar = () => {
 	const pathname = usePathname();
+
+	const { isLoaded } = useUser();
 
 	const navLinks = [
 		{ name: "Home", href: "/", icon: IoHomeOutline, active: IoHome },
@@ -72,7 +76,7 @@ const Navbar = () => {
 					</Link>
 
 					{/* Desktop nav */}
-					<nav>
+					<nav className="flex items-center justify-center space-x-2">
 						<ul className="space-x-8 hidden min-[1111px]:flex">
 							{navLinks.map((link) => {
 								const isActive = pathname === link.href;
@@ -82,7 +86,7 @@ const Navbar = () => {
 										<Link href={link.href}>
 											<p
 												className={cn(
-													"flex space-x-2 items-center font-semibold transition",
+													"flex space-x-2 items-center font-semibold transition mt-0.5",
 													isActive
 														? "text-primary underline underline-offset-8"
 														: "text-black hover:text-primary hover:underline underline-offset-8"
@@ -95,6 +99,42 @@ const Navbar = () => {
 								);
 							})}
 						</ul>
+						<div className="flex items-center justify-center space-x-4">
+							<Separator
+								orientation="vertical"
+								className="h-6 bg-neutral-900"
+							/>
+							<SignedOut>
+								<Link href="/sign-in">
+									<p
+										className={cn(
+											"flex items-center font-semibold transition"
+										)}>
+										<User className="size-5 mr-2" />
+										Sign In
+									</p>
+								</Link>
+							</SignedOut>
+
+							{isLoaded ? (
+								<SignedIn>
+									<UserButton
+										appearance={{
+											elements: {
+												avatarBox: "size-10 rounded border border-gray-300", // styling
+											},
+										}}
+										fallback={
+											<div className="w-8 h-8 flex items-center justify-center rounded-full bg-gray-300 text-sm font-bold text-gray-700">
+												U
+											</div>
+										}
+									/>
+								</SignedIn>
+							) : (
+								<div className="w-8 h-8 flex items-center justify-center rounded-full bg-gray-300 text-sm font-bold text-gray-700 animate-pulse" />
+							)}
+						</div>
 
 						{/* Mobile Menu */}
 						<div className="min-[1111px]:hidden">

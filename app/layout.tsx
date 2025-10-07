@@ -41,6 +41,8 @@ export default function RootLayout({
 
 					phoneInputBox:
 						" shadow-none! border! border-neutral-300! border-r-none!",
+					userButtonPopoverCard:
+						"shadow-none! border-2! border-neutral-300! mt-6! min-[767px]:mt-10!",
 				},
 			}}>
 			<html lang="en">
